@@ -1,7 +1,7 @@
 # BDA-FlaggedPostAnalysis
 
 
- [![Build Status](https://travis-ci.org/github/BDA-FlaggedPostAnalysis.svg?branch=master)](https://travis-ci.org/github/scientist)
+ [![Build Status](https://travis-ci.org/github/BDA-FlaggedPostAnalysis.svg?branch=master)](https://travis-ci.org/github/BDA-FlaggedPostAnalysis)
 [![Language](https://img.shields.io/badge/Python-14354C?style=plastic&colorB=68B7EB)]()
 [![Language](https://img.shields.io/badge/Python-14354C?style=plastic&colorB=68B7EB)]()
 
