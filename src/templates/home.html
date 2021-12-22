@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<br>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.background1
+{
+  background: #FFF4F4;
+  width: 1200px;
+  height: 600px;
+}
+
+.background2
+{
+  width: 1200px;
+  height: 550px;
+  background: #FFF4F4;
+  border-radius: 500px 0px 500px 0px;
+}
+
+.background3
+{
+  width: 1000px;
+  height: 550px;
+  background: #fbfbfb;
+  border-radius: 500px 0px 500px 0px;
+  border-right: 50px solid #ffffff;
+  border-left: 50px solid #ffffff;
+  margin: auto;
+  box-shadow: inset 0px 0px 100px #00000017;
+}
+
+.content
+{
+  width: 550px;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.title
+{
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subtitle
+{
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
+  color: #272727;
+  font-weight: bold;
+}
+
+
+
+.website
+{
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.text::-webkit-scrollbar
+{
+  width: 1px; background: transparent !important;
+  border: 0px !important;
+}
+
+.text::-webkit-scrollbar-track
+{
+  background: transparent !important;
+}
+
+.text::-webkit-scrollbar-thumb {
+  background: #3fbd6c /*COLOR FONDO SCROLL*/ !important;
+  border: 0px !important;
+}
+.social
+{
+  width: 300px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 1070px;
+  position: relative;
+  top: -80px;
+  text-align: right;
+  padding: 15px;
+}
+
+.social img
+{
+  height: 35px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.social img
+{
+  background: #151B54;
+  margin-left: 5px;
+}
+
+.social img:hover
+{
+  background: blue;
+}
+
+
+
+
+</style>
+<style>
+	#ip3 {
+    border-radius: 30px 80px 10px;
+    border: 3px solid #609;
+    padding: 20px;
+    width: 1000px;
+    height: 350px;
+}
+#ip4 {
+    border-radius: 30px 80px 10px;
+    border: 3px solid #609;
+    padding: 20px;
+    width: 1000px;
+    height: 500px;
+}
+</style>
+<br><br>
+
+<br>
+<body>
+
+	<img src="{{ user_image }}" alt="User Image" width="800px" height="300px" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST" style="text-align: center;">
+
+			<h2 class="text-red blink-hard">Enter Your StackOverFlow Post Title</h2>
+
+		<textarea name="title" rows="10" cols="100" required="required" id="ip3" style="color: #000000; font-size: 20px;"></textarea>
+		<h2 class="text-red blink-hard">Enter Your StackOverFlow Post Body</h2>
+
+		<textarea name="review" rows="40" cols="100" required="required" id="ip4" style="color: #000000; font-size: 20px;"></textarea>
+		<br/>
+
+		<input type="submit" class="btn btn-dark btn-primary-lg"  value="predict" style="height:60px; width:100px; font-size:20px font-family:Helvetica;">
+	<br><br><br><br>
+	</form>
+</body>
+
+</html>

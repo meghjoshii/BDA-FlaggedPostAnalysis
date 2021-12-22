@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.page-contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background: #E7F3F1;
+  border: .80em solid white;
+  padding: 2.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.data-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20.75em;
+    min-height: 20.75em;
+    overflow: hidden;
+    border-radius: .5em;
+    text-decoration: none;
+    background: white;
+    margin: 1em;
+    padding: 2.75em 2.5em;
+    box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+    transition: transform .45s ease, background .45s ease;
+}
+
+
+</style>
+
+<body>
+<img src="{{ user_image }}" alt="User Image" width="800px" height="300px" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+<section class="page-contain">
+
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{Average_Term_Entropy}}</p></h3></h3>
+      <h4> Average Term Entropy </h4>
+  </div>
+  <div class="data-card">
+    <h3 > <p style="color:mediumpurple">{{Coleman_Liau_Index}}</p></h3>
+      <h4> Coleman Liau Index</h4>
+  </div>
+    <div class="data-card">
+    <h3 > <p style="color:mediumpurple">{{Automated_Reading_Index}}</p></h3>
+      <h4> Automated Reading Index</h4>
+  </div>
+
+    <div class="data-card">
+    <h3 > <p style="color:mediumpurple">{{Flesch_Kincaid_Grade_Level}}</p></h3>
+      <h4> Flesch Kincaid Grade Level</h4>
+  </div>
+    <div class="data-card">
+    <h3 > <p style="color:mediumpurple">{{Flesch_Reading_Ease_Score}}</p></h3>
+      <h4> Flesch Reading Ease Score</h4>
+  </div>
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{Gunning_Fox_Index}}</p></h3></h3>
+      <h4> Gunning Fox Index</h4>
+  </div>
+
+  <div class="data-card">
+    <h3> <p style="color:mediumpurple">{{Smog_Index}}</p></h3>
+      <h4> Smog Index </h4>
+  </div>
+<div class="data-card">
+    <h3> <p style="color:mediumpurple">{{word_count}}</p></h3>
+      <h4> Word Count </h4>
+  </div>
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{sentence_count}}</p></h3></h3>
+      <h4> Sentence Count </h4>
+  </div>
+<div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{syllables_count}}</p></h3></h3>
+      <h4> Syllables Count</h4>
+  </div>
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{poly_syllable_count}}</p></h3></h3>
+      <h4> Poly Syllable Count </h4>
+  </div>
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{avg_sentences}}</p></h3></h3>
+      <h4> Average Sentences</h4>
+  </div>
+  <div class="data-card">
+    <h3><h3 > <p style="color:mediumpurple">{{avg_letters}}</p></h3></h3>
+      <h4> Average Letters</h4>
+  </div>
+
+</section>
+
+<section>
+<div class="results" style="text-align: center;">
+	<p style="font-size:20;"><b><h2>Prediction Results for post is </h2></b></p>
+
+{% if prediction == 2%}
+	<h2 style="color:green;"> <br> Good, No edits needed </h2>
+{% elif prediction == 1%}
+	<h2 style="color:blue;"> <br>Bad, can be modified with edits </h2>
+{% elif prediction == 0%}
+	<h2 style="color:red;"><br>Bad, flag and close this </h2>
+	{% endif %}
+</div>
+
+</section>>
+
+</body>
+</html>
