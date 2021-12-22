@@ -3,7 +3,6 @@
 
  [![Build Status](https://travis-ci.org/github/BDA-FlaggedPostAnalysis.svg?branch=master)](https://travis-ci.org/github/BDA-FlaggedPostAnalysis)
 [![Language](https://img.shields.io/badge/Python-14354C?style=plastic&colorB=68B7EB)]()
-[![Language](https://img.shields.io/badge/Python-14354C?style=plastic&colorB=68B7EB)]()
 
 
 [![License](https://img.shields.io/github/license/vhesener/Closures.svg?style=plastic&colorB=68B7EB)]()
@@ -43,7 +42,13 @@ Our project addresses this goal by utilizing techniques of data visualization to
 
 
 ### Instructions on running the flask server
-TODO: Aqid
+~~~python
+
+!pip install requirements.txt
+python app.py
+
+
+~~~
 
 ### Architecture Diagram
 ![architecture.png](images/architecture.png)
