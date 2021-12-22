@@ -55,6 +55,13 @@ python app.py
 
 ### Dataset
 - Dataset obtained from StackExchange Data Dump containing 96M posts. 
+ ~~~
+ SOTorrent: Reconstructing and Analyzing the Evolution of Stack Overflow Posts.Permalink
+Sebastian Baltes, Lorik Dumani, Christoph Treude, and Stephan Diehl.
+Proceedings of the 15th International Conference on Mining Software Repositories (MSR 2018).
+Acceptance rate: 33% (37/113).
+~~~
+
 - Uploaded the same on big query and used SQL queries for merging Posts, Users, Answers and Views together.
 
 TODO - SQL Query Images
