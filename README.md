@@ -25,21 +25,58 @@ The goal of this project is to analyze and identify the features of poor quality
 Our project addresses this goal by utilizing techniques of data visualization to observe underlying patterns, feature selection and extraction to strengthen the classification model by feeding it with reliable features. The features that will be given as input to the model are a combination of user-based features, community-based features and textual features extracted from the body of the posts. 
 
 ### Repository Structure
-- /dataset
-    - posts_dataset.csv
-- /src
-    - /cleaning_feature_extraction
-        - data_cleaning_feature_extraction.ipynb
-    - /logistic_regression
-        - logistic_regression_model.ipynb
-    - /lstm_semi_supervised
-        - TODO
-- /report
-    - TODO
-- /sql_queries
-    - TODO
-- README.md
+```
+BDA-FlaggedPostAnalysis:.
+│   .gitignore
+│   README.md
+│   requirements.txt
+│
+├───dataset
+│       posts_dataset.csv
+│       test_data.csv
+│
+├───images
+│       architecture.png
+│
+└───src
+    │   app.py
+    │   helper.py
+    │
+    ├───cleaning_feature_extraction
+    │       data_cleaning_feature_extraction.ipynb
+    │
+    ├───logistic_regression
+    │       logistic_regression_model.ipynb
+    │
+    ├───model
+    │       model.h5
+    │
+    ├───static
+    │   └───images
+    │           logo.png
+    │
+    └───templates
+            home.html
+            result.html
 
+```
+
+### Code documentation and organisation
+
+~~~python
+requirements.txt
+"""
+Contains the necessary enviroment and libraries needed to run this code.
+"""
+─dataset
+"""
+Contains the dataset used. Note large files were directly used on GCP
+"""
+-src
+"""
+Contains the flask application and jupyter notebooks
+"""
+~~~
 
 ### Instructions on running the application
 
