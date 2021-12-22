@@ -41,14 +41,24 @@ Our project addresses this goal by utilizing techniques of data visualization to
 - README.md
 
 
-### Instructions on running the flask server
+### Instructions on running the application
+
+~~~
+git clone git@github.com:meghjoshii/BDA-FlaggedPostAnalysis.git
+
+~~~
+
 ~~~python
 
 !pip install requirements.txt
-python app.py
-
-
 ~~~
+
+After installation make sure to run the flask application directly.
+~~~
+python app.py
+~~~
+
+Go to http://localhost:5000/ or whatever url it shows you on a browser
 
 ### Architecture Diagram
 ![architecture.png](images/architecture.png)
@@ -95,7 +105,22 @@ Applied a grid-based hyperparameter tuner to fetch the following parameters:
 
 
 ### Conclusion
-TODO
+Based on the results and analysis undertaken, we believe that simply relying on textual evidence is not enough for classification. Since, we did not have previous flagged post data, that would have been a great feature to improve model performance. All in all, our analysis sheds light on the approaches that can be undertaken for large scale classification of flagged stack overflow posts. 
+We have designed novel approaches to reduce the stackoverflow moderation queue size which will be useful in the long run.
 
 ### References
-TODO
+```math
+[1]  Annamoradnejad   I,   Fazli   M   and   Habibi   J   2020 Predicting Subjective Features from Questions
+on QA Websites using BERT
+Proc. of I6 th Int.   Conf.   on   Web   Research   (Iran) 
+pp.   240-244.https://doi.org/1010.1109/ICWR49608.2020.9122318.
+[2]   Baltes, S., Treude, C. and Diehl, S., 2019, May. Sotor-rent:  Studying the origin, evolution,
+and usage of stackoverflow code snippets.
+In 2019 IEEE/ACM 16th Inter-national  Conference  on
+Mining  Software  Repositories(MSR) (pp. 191-194). IEEE.
+[3]  Baltes, S., Dumani, L., Treude, C. and Diehl, S., 2018,May.
+Sotorrent: Reconstructing and analyzing the evolu-tion of stack overflow posts.
+In Proceedings of the 15th international conference on mining software repositories(pp. 319-330).
+[4]   L. Ponzanelli, A. Mocci, A. Bacchelli, M. Lanza and D.Fullerton, "Improving Low Quality Stack Overflow PostDetection,"
+2014 IEEE International Conference on Soft-ware  Maintenance  and  Evolution,  2014,  pp.  541-544,doi: 10.1109ICSME.2014.90
+```
