@@ -112,10 +112,12 @@ Acceptance rate: 33% (37/113).
 
 - Uploaded the same on big query and used SQL queries for merging Posts, Users, Answers and Views together.
 
-TODO - SQL Query Images
 
 ### Semi Supervised - LSTM Encoder Decoder
-TODO
+The model is trained on 60K
+posts, and was used to label the rest of the data with an
+accuracy of 84%. The LSTM model uses an SGD optimizer and categorical cross-entropy loss. After training the model on the training data for 25 epochs, accuracy of 84% was achieved. The new data was then
+labeled using this model.
 
 ### Logistic Regression
 Logistic Regression is mainly used for predicting binary labels based on logits (log of odds). We leveraged the pyspark logistic regression library for creating transformers and estimator for fitting our dataset. 
@@ -148,6 +150,9 @@ Applied a grid-based hyperparameter tuner to fetch the following parameters:
 ### Conclusion
 Based on the results and analysis undertaken, we believe that simply relying on textual evidence is not enough for classification. Since, we did not have previous flagged post data, that would have been a great feature to improve model performance. All in all, our analysis sheds light on the approaches that can be undertaken for large scale classification of flagged stack overflow posts. 
 We have designed novel approaches to reduce the stackoverflow moderation queue size which will be useful in the long run.
+
+### YouTube Link
+https://www.youtube.com/watch?v=CDgAe_pxUHU
 
 ### References
 ```math
