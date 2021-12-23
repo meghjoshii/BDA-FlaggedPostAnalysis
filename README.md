@@ -140,6 +140,9 @@ Applied a grid-based hyperparameter tuner to fetch the following parameters:
 | Cohen-Kappa Metric   | 0.26        |
 | Mathews Correlation Coefficient   | 0.25  |
 
+### Front End UI
+![UI.png](images/UI.png)
+
 
 ### Conclusion
 Based on the results and analysis undertaken, we believe that simply relying on textual evidence is not enough for classification. Since, we did not have previous flagged post data, that would have been a great feature to improve model performance. All in all, our analysis sheds light on the approaches that can be undertaken for large scale classification of flagged stack overflow posts. 
