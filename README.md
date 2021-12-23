@@ -37,6 +37,7 @@ BDA-FlaggedPostAnalysis:.
 │
 ├───images
 │       architecture.png
+│       UI.PNG
 │
 └───src
     │   app.py
@@ -141,7 +142,7 @@ Applied a grid-based hyperparameter tuner to fetch the following parameters:
 | Mathews Correlation Coefficient   | 0.25  |
 
 ### Front End UI
-![UI.png](images/UI.png)
+![UI.PNG](images/UI.PNG)
 
 
 ### Conclusion
